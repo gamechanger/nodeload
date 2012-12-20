@@ -1,6 +1,6 @@
 .PHONY: clean templates compile
 PROCESS_TPL = scripts/process_tpl.js
-SOURCES = lib/header.js lib/config.js lib/util.js lib/stats.js lib/loop/loop.js lib/loop/multiloop.js lib/monitoring/collectors.js lib/monitoring/statslogger.js lib/monitoring/monitor.js lib/monitoring/monitorgroup.js lib/http.js lib/reporting/*.tpl.js lib/reporting/template.js lib/reporting/report.js lib/reporting/reportmanager.js lib/reporting/external.js lib/loadtesting.js  lib/remote/endpoint.js lib/remote/endpointclient.js lib/remote/slave.js lib/remote/slaves.js lib/remote/slavenode.js lib/remote/cluster.js lib/remote/httphandler.js lib/remote/remotetesting.js
+SOURCES = lib/header.js lib/config.js lib/util.js lib/stats.js lib/loop/loop.js lib/loop/multiloop.js lib/loop/program.js lib/loop/userloop.js lib/loop/multiuserloop.js lib/monitoring/collectors.js lib/monitoring/statslogger.js lib/monitoring/monitor.js lib/monitoring/monitorgroup.js lib/http.js lib/reporting/*.tpl.js lib/reporting/template.js lib/reporting/report.js lib/reporting/reportmanager.js lib/reporting/external.js lib/loadtesting.js  lib/remote/endpoint.js lib/remote/endpointclient.js lib/remote/slave.js lib/remote/slaves.js lib/remote/slavenode.js lib/remote/cluster.js lib/remote/httphandler.js lib/remote/remotetesting.js
 
 all: compile
 
