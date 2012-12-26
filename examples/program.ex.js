@@ -13,8 +13,9 @@ http.createServer(function (req, res) {
 }).listen(9000);
 
 var user = function(prog) {
+    prog.host('localhost', 9000);
     for (var i = 0; i < 50; i++) {
-        prog.request({hostname: 'localhost', path: '/', method: 'GET', 'port': 9000})
+        prog.get('/')
             .wait(5000);
     }
 };
