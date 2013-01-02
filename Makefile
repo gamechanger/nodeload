@@ -6,7 +6,7 @@ all: compile
 
 clean:
 	rm -rf ./lib-cov
-	rm -f ./nodeload.js ./lib/reporting/*.tpl.js
+	rm -f ./lib/reporting/*.tpl.js
 	rm -f results-*-err.log results-*-stats.log results-*-summary.html
 
 templates:
