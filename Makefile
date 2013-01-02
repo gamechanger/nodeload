@@ -14,6 +14,3 @@ templates:
 	$(PROCESS_TPL) DYGRAPH_SOURCE lib/reporting/dygraph.tpl > lib/reporting/dygraph.tpl.js
 
 compile: templates
-	echo "#!/usr/bin/env node" > ./nodeload.js
-	cat $(SOURCES) | ./scripts/jsmin.js >> ./nodeload.js
-	chmod +x ./nodeload.js
